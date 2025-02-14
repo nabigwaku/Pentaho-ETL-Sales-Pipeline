@@ -18,9 +18,12 @@ This project demonstrates the use of Pentaho Data Integration (PDI) to automate 
 6. Automate the pipeline using Pentaho jobs.
 7. Schedule the Job using Windows Task Scheduler or Cron 
 
-## Screenshots
-![Transformation Example](documentation/screenshots/transformation_example.png)
-![Job Example](documentation/screenshots/job_example.png)
+## Project documentation
+- ![Project Overview](documentation/project_overview.md)
+- ![Transformations](transformations)
+- ![Jobs](jobs)
+- ![Screenshorts](documentation/screenshots)
+- ![Data](data)
 
 ## Setup Instructions
 - Install Pentaho Data Integration (PDI) from [here](https://sourceforge.net/projects/pentaho/).
