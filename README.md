@@ -1,4 +1,4 @@
-# Pentaho ETL Pipeline for Sales Data Automation
+# Automated Sales-Data ETL with Pentaho
 
 ## Overview
 This project demonstrates the use of Pentaho Data Integration (PDI) to automate the processing of sales data for a furniture company. The pipeline extracts data from multiple sources (CSV, PostgreSQL, AWS S3, Excel, Zip Files, XML, JSON), cleans and validates it, and loads it into a centralized data warehouse.
