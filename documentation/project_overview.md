@@ -92,10 +92,16 @@ This project demonstrates the use of **Pentaho Data Integration (PDI)** to autom
 
 4. **Automate the Pipeline**  
    - Using Pentaho jobs.  
-   ![Automation](images/automation.png)  
+   ![Automation](screenshots/sales_pipeline_job.png)  
 
 7. **Schedule the Job**  
-   - Using Windows Task Scheduler or Cron.  
+   - Using Windows Task Scheduler or Cron.
+      1. Run the job in cmd for Windows OS users
+      2. Navigate to the location where the Pentaho is stored
+      3. To run the Job use syntax below:
+          > kitchen.bat /file:"c:funiture_pipelines/sales_pipeline_job.kjb" /level:Basic
+      4. Copy the syntax above in Notepad and save File as schedulingjob.bat
+      5. Type **taskschd** to load the Windows Task Scheduler and Create a Basic Task referencing the schedulingjob.bat  
    ![Scheduling](images/scheduling.png)
 
 ---
