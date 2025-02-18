@@ -6,8 +6,8 @@
 ### 📃 Table of Contents:
 - [Overview](#-overview)
 - [Tools Used](#-tools-used)
-- [Steps](#-steps)
 - [Project Documentation](#-project-documentation)
+- [ETL Process](#-ETL-Process)
 - [Setup Instructions](#-setup-instructions)
 
 ---
@@ -25,6 +25,14 @@ This project demonstrates the use of **Pentaho Data Integration (PDI)** to autom
 - **PostgreSQL**  
 - **AWS S3**  
 - **pgAdmin**  
+
+---
+
+## 📂 Project Documentation  
+- **[Transformations](../transformations)**  
+- **[Jobs](../jobs)**  
+- **[Screenshots](../screenshots)**  
+- **[Data](../data)**  
 
 ---
 
@@ -88,16 +96,7 @@ This project demonstrates the use of **Pentaho Data Integration (PDI)** to autom
 
 7. **Schedule the Job**  
    - Using Windows Task Scheduler or Cron.  
-   ![Scheduling](images/scheduling.png)  
-
----
-
-## 📂 Project Documentation  
-- **Project Overview**  
-- **Transformations**  
-- **Jobs**  
-- **Screenshots**  
-- **Data**  
+   ![Scheduling](images/scheduling.png)
 
 ---
 
