@@ -28,28 +28,61 @@ This project demonstrates the use of **Pentaho Data Integration (PDI)** to autom
 
 ---
 
-## 📌 Steps  
-1. **Extract Customer Data**  
-   - From CSV, TXT, and ZIP Files.  
-   ![Customer Data Extraction](images/customer_extraction.png)  
+## 📌 ETL Process  
+1. **Extract, Clean, and Load Customer Data**  
+
+- **Data Sources:** The data comes from CSV, TXT, and ZIP files.  
+  > Steps used:  
+  - **Text File Input:** For CSV, TXT, and ZIP files.  
+  - **Excel File Input:** For Excel files.  
+  - **Data Grid:** For manual data entry.  
+
+- **Data Cleaning and Transformation:**  
+  - Sorted and merged data.  
+  - Removed duplicates.  
+  - Cleaned data fields using **Replace in String**, **Calculate**, **Fuzzy Match**and **Value Mapper** steps.  
+
+  ![Customer Data Extraction](screenshots/customerData%20transformation.png)  
+
+- **Loading Data:** The cleaned data is stored in the **Customer** table using the **Combination Lookup/Update** step.  
+
+  ![Customer Table](screenshots/loaded%20customer%20data%20db.png)
 
 2. **Extract Product Data**  
-   - From XML and JSON Files.  
-   ![Product Data Extraction](images/product_extraction.png)  
+
+- **Data Sources:** The data comes from XML and JSON Files.  
+  > Steps used:  
+  - **Get data from XML:** For XML files.  
+  - **JSON Input:** For Json files.  
+
+- **Data Cleaning and Transformation:**  
+  - Sorted and merged data.  
+  - Removed duplicates.
+    
+   ![Product Data Extraction](screenshots/productData%20transformation.png)
+
+- **Loading Data:** The cleaned data is stored in the **Product** table using the **Dimension Lookup/Update** step.  
+
+  ![Customer Table](screenshots/loaded%20product%20data%20db.png)
 
 3. **Extract Sales Data**  
-   - From PostgreSQL Table and AWS S3.  
-   ![Sales Data Extraction](images/sales_extraction.png)  
+   - From PostgreSQL Table and AWS S3.
+- **Data Sources:** The data comes from PostgreSQL Table and AWS S3.  
+  > Steps used:
+  - **Table Input:** For Excel files.  
+  - **Hadoop File Input:** For ASW S3, Files from Hadoop.
 
-4. **Merge, Clean, and Validate Data**  
-   - Using Pentaho transformations.  
-   ![Data Cleaning](images/data_cleaning.png)  
+- **Data Cleaning and Transformation:**  
+  - Sorted and merged data.  
+  - Removed duplicates.  
+  - Cleaned data fields using **Formula**, **Calculate**, **Stream loopup**and **Filter Rows** steps.
+    
+   ![Sales Data Extraction](screenshots/salesData%20transformation.png)
 
-5. **Load Processed Data**  
-   - Into a PostgreSQL database.  
-   ![Data Loading](images/data_loading.png)  
+- **Loading Data:** The cleaned data is stored in the **Product** table using the **Dimension Lookup/Update** step.
+  ![Sales DB Output](screenshots/loaded%20sales%20data%20db.png)
 
-6. **Automate the Pipeline**  
+4. **Automate the Pipeline**  
    - Using Pentaho jobs.  
    ![Automation](images/automation.png)  
 
@@ -76,15 +109,9 @@ This project demonstrates the use of **Pentaho Data Integration (PDI)** to autom
    - Use the scripts provided in the `scripts/` folder.  
 
 3. **Run Transformations and Jobs**  
-   - Execute the transformations and jobs located in the `transformations/` and `jobs/` folders.  
-
----
-
-## 👀 Preview Output  
-Here’s a preview of the final output after the ETL process:  
-![Output Preview](images/output_preview.png)  
+   - Execute the transformations and jobs in the `transformations/` and `jobs/` folders.  
 
 ---
 
 ## 🙌 Support Me!  
-👉 If you find this project useful, please ⭐ this repository 😆!  
+👉 If you find this project useful, please ⭐ this repository  
