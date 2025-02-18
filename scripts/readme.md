@@ -1,5 +1,4 @@
 ### You shall need to run the scripts in the sequence below: 
-
 1. Run the sales table sql first to create the table.
 	- fill the table with data from csv as instructed
 	- the data shall then be extracted through a table input step within the productdata transformation
